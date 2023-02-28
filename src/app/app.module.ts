@@ -11,8 +11,19 @@ import { FooterComponent } from './footer/footer.component';
 import { RegistroComponent } from './registro/registro.component';
 import { SesionComponent } from './sesion/sesion.component';
 import { PracticasComponent } from './practicas/practicas.component';
+
 import { CargarscriptsService } from './cargarscripts.service';
 
+import { RouterModule, Routes } from '@angular/router';
+
+const appRoutes:Routes=[
+  {path: '', component:InicioComponent},
+  {path:'inicio', component:InicioComponent},
+  {path:'inicio', component:InicioComponent},
+  {path:'inicio', component:InicioComponent},
+  {path:'inicio', component:InicioComponent},
+  {path:'inicio', component:InicioComponent},
+];
 
 @NgModule({
   declarations: [
@@ -28,8 +39,11 @@ import { CargarscriptsService } from './cargarscripts.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes,{enableTracing:true})
   ],
+
+
   providers: [
     CargarscriptsService
   ],
