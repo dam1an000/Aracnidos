@@ -4,11 +4,12 @@
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex justify-content-between">
 
-      <div class="logo">
-       <img class="logoimg" src="../../assets/logos/Picsart_23-03-07_08-58-59-651.png" alt="">
+      <div> 
+       <img class="logoimg nav-link" src="../../assets/logos/Picsart_23-03-07_08-58-59-651.png" alt="">
       </div>
       <div class="logo">
-        <h1><a class="titulo" href="index.html">Heavy Aracnidos</a></h1>
+        <a class="titulo nav-link scrollto active" [routerLink]="['inicio']">Heavy Aracnidos</a>
+
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -17,7 +18,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" [routerLink]="['inicio']">Inicio</a></li>
-          <li class="dropdown"><a [routerLink]="['tarantulas']"><span>Tarántulas</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a class="nav-link" [routerLink]="['tarantulas']"><span>Tarántulas</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a class="nav-link scrollto" [routerLink]="['Tarciclo']">Ciclo biologico</a></li>
               <li><a class="nav-link scrollto" [routerLink]="['Tarconservacion']">Conservacion</a> </li>
@@ -25,7 +26,7 @@
               <li><a class="nav-link scrollto" [routerLink]="['Taranatomia']">Anatomia</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a [routerLink]="['Escorpiones']"><span>Escorpiones</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a  class="nav-link" [routerLink]="['Escorpiones']"><span>Escorpiones</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a class="nav-link scrollto" [routerLink]="['Escciclo']">Ciclo biologico</a></li>
               <li><a class="nav-link scrollto" [routerLink]="['Escconservacion']">Conservacion</a> </li>
@@ -33,7 +34,7 @@
               <li><a class="nav-link scrollto" [routerLink]="['Escanatomia']">Anatomia</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a [routerLink]="['Cuidados']"><span>Cuidados</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a  class="nav-link" [routerLink]="['Cuidados']"><span>Cuidados</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a class="nav-link scrollto" [routerLink]="['mantenimiento']">Mantenimiento</a></li>
               <li><a class="nav-link scrollto" [routerLink]="['enfermedades']">Enfermedades y accidentes</a> </li>

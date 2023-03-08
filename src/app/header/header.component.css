@@ -1,8 +1,12 @@
 .titulo{
-font-family: 'nordic_metal_band';
-color: yellow;
-}
+    font-size: 50px;
+    -webkit-text-fill-color: rgb(24, 24, 24);
+    -webkit-text-stroke: 1px white;
+    font-family: 'nordic_metal_band';
+    }
+
 .logoimg{
-    width: 100%;
-    height: auto;
+    width: 75px;
+    height: 75px;
+    padding: 5px;
 }
