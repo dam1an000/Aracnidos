@@ -1,8 +1,10 @@
 .titulo{
-    font-size: 50px;
-    -webkit-text-fill-color: rgb(24, 24, 24);
+    font-size: 42px;
     -webkit-text-stroke: 1px white;
-    font-family: 'nordic_metal_band';
+    font-family: 'nordic_metal_band'; 
+    background: -webkit-linear-gradient(top, rgb(14, 14, 14), rgb(83, 83, 83));
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;  
     }
 
 .logoimg{
@@ -11,3 +13,16 @@
     padding: 5px;
 }
 
+header{
+    background: rgb(25,25,25);
+    background: linear-gradient(0deg, rgb(34, 34, 34) 0%, rgb(0,0,0,1) 100%);
+}
+
+.comp{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:medium;
+}
+
+:hover.comp{
+    color: rgb(61, 197, 179); 
+}
