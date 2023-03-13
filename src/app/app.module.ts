@@ -33,6 +33,7 @@ import { EnfermedadesComponent } from './content/enfermedades/enfermedades.compo
 
 import { FormsModule } from '@angular/forms';
 import { AngularFireModule} from '@angular/fire/compat';
+
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
