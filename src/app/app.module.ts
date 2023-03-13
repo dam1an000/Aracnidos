@@ -31,6 +31,11 @@ import { EsccicloComponent } from './content/escciclo/escciclo.component';
 import { MantenimientoComponent } from './content/mantenimiento/mantenimiento.component';
 import { EnfermedadesComponent } from './content/enfermedades/enfermedades.component';
 
+import { FormsModule } from '@angular/forms';
+import { AngularFireModule} from '@angular/fire/compat';
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
 const appRoutes:Routes=[
   {path: '', component:InicioComponent},
   {path:'inicio', component:InicioComponent},
@@ -82,7 +87,17 @@ const appRoutes:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes,{enableTracing:true})
+    RouterModule.forRoot(appRoutes,{enableTracing:true}),
+    FormsModule,
+    AngularFireModule.initializeApp({
+      apiKey: "AIzaSynpmBpvFtw48SF23xOvLXxdYFf4glyDNjFVyo",
+      authDomain: "heavyaracnidos.firebaseapp.com",
+      projectId: "heavyaracnidos",
+      storageBucket: "heavyaracnidos.appspot.com",
+      messagingSenderId: "65182180921",
+      appId: "1:65182180921:web:77e2546470410856658fe8",
+      measurementId: "G-J45C41PG6G"
+    })
   ],
 
 
