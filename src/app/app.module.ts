@@ -50,6 +50,7 @@ const appRoutes:Routes=[
   {path:'Escconservacion', component:EscconservacionComponent},
   {path:'Escmuda', component:EscmudaComponent},
   {path:'Escanatomia', component:EscanatomiaComponent},
+  {path:'registro', component:RegistroComponent}
 ];
 
 @NgModule({
