@@ -8,8 +8,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ContentComponent } from './content/content.component';
 import { InicioComponent } from './content/inicio/inicio.component';
 import { FooterComponent } from './footer/footer.component';
-import { RegistroComponent } from './registro/registro.component';
-import { SesionComponent } from './sesion/sesion.component';
+import { RegistroComponent } from './content/registro/registro.component';
+import { SesionComponent } from './content/sesion/sesion.component';
 import { PracticasComponent } from './practicas/practicas.component';
 
 import { CargarscriptsService } from './cargarscripts.service';
