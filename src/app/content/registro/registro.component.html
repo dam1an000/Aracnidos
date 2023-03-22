@@ -40,7 +40,12 @@
                 <input type="password" [(ngModel)]= "form.contra" id="form3Example4" class="form-control" />
                 <label class="form-label" for="form3Example4">Password</label>
               </div>
-  
+              
+              <!-- Password confirm -->
+              <div class="form-outline mb-4">
+                <input type="password" [(ngModel)]= "ccontra" id="form3Example4" class="form-control" />
+                <label class="form-label" for="form3Example4">confirmar contraseña</label>
+              </div>  
               <!-- Submit button -->
               <button type="submit" (click)="registrar()"class="btn btn-primary btn-block mb-4">
                 Sign up

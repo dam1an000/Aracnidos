@@ -21,7 +21,7 @@ export class RegistroComponent {
   ngOnInit(){
      
   }
-  registar(){
+  registrar(){
     if (this.form.nombre != '' && this.form.correo != '' && this.form.contra != '' && this.ccontra != '') {
       if (this.form.contra != this.ccontra) {
         alert("Las contraseñas no coinciden")
@@ -49,11 +49,16 @@ export class RegistroComponent {
       })
       .catch(function(error){
         if (error.code == "auth/invalid-email") {
-          alert("Ingresa un correo electro") 
-          
+          alert("Ingresa un correo electronico valido.") 
+        }
+        if (error.code == 'auth/email-already-in-use') {
+          alert("Ese correo ya se encuentra registrado.")
+        }
+        if (error.code == 'auth/weak-password') {
+          alert("La contraseña debe tener almenos 6 caracteres.")
         }
       })
     })
-
+    return promise;
   }
 }
