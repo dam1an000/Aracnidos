@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth} from '@angular/fire/compat/auth'
 
 @Component({
@@ -6,23 +6,27 @@ import { AngularFireAuth} from '@angular/fire/compat/auth'
   templateUrl: './registro.component.html',
   styleUrls: ['./registro.component.css']
 })
-export class RegistroComponent {
+export class RegistroComponent implements OnInit {
 
   form={
     nombre: "",
     correo: "",
-    contra: "",
+    contra: ""
   }
   ccontra:any
+
+
 
   constructor(private auth: AngularFireAuth){
 
   }
-  ngOnInit(){
+  ngOnInit(): void{
      
   }
+
   registrar(){
-    if (this.form.nombre != '' && this.form.correo != '' && this.form.contra != '' && this.ccontra != '') {
+    if (this.form.nombre != "" && this.form.correo != "" && this.form.contra != "" && this.ccontra != "") 
+    {
       if (this.form.contra != this.ccontra) {
         alert("Las contraseñas no coinciden")
       }
@@ -42,9 +46,11 @@ export class RegistroComponent {
       alert("Favor de completar los datos")
     }
   }
+  
   adduser(form:any){
     var promise = new Promise((resolve,reject)=>{
-      this.auth.createUserWithEmailAndPassword(form.correo,form.contra).then((result)=>{
+      this.auth.createUserWithEmailAndPassword(form.correo,form.contra)
+      .then((result)=>{
         resolve(result)
       })
       .catch(function(error){
