@@ -92,13 +92,13 @@ const appRoutes:Routes=[
     RouterModule.forRoot(appRoutes,{enableTracing:true}),
     FormsModule,
     AngularFireModule.initializeApp({
-      apiKey: "AIzaSynpmBpvFtw48SF23xOvLXxdYFf4glyDNjFVyo",
+      apiKey: "AIzaSyBpvFtw48SF23xOvLXxdYFf4glyDNjFVyo",
       authDomain: "heavyaracnidos.firebaseapp.com",
       projectId: "heavyaracnidos",
       storageBucket: "heavyaracnidos.appspot.com",
       messagingSenderId: "65182180921",
-      appId: "1:65182180921:web:77e2546470410856658fe8",
-      measurementId: "G-J45C41PG6G"
+      appId: "1:65182180921:web:b8ada4a460fdaed7658fe8",
+      measurementId: "G-VB1D8828JV"
     })
   ],
 
