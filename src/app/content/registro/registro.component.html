@@ -1,59 +1,41 @@
-<!-- Section: Design Block -->
-<section class="text-center">
-    <!-- Background image -->
-    <div class="p-5 bg-image" style="
-          background-image: url('https://mdbootstrap.com/img/new/textures/full/171.jpg');
-          height: 300px;
-          "></div>
-    <!-- Background image -->
-  
-    <div class="card mx-4 mx-md-5 shadow-5-strong" style="
-          margin-top: -100px;
-          background: hsla(0, 0%, 100%, 0.8);
-          backdrop-filter: blur(30px);
-          ">
-      <div class="card-body py-5 px-md-5">
-  
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-8">
-            <h2 class="fw-bold mb-5">Registrate ahora</h2>
-            <form>
-              <!-- nombre -->
-              <div class="row">
-                <div class="col-md-12 mb-8">
-                  <div class="form-outline">
-                    <input type="text" [(ngModel)]="form.nombre" class="form-control" >
-                    <label class="form-label" >Nombre</label>
-                  </div>
-                </div>
+<section class="h-100 h-custom fondo">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-8 col-xl-6">
+        <div class="card rounded-3 cuadro">
 
-              </div>
-  
-              <!-- Email input -->
+          <div class="card-body p-4 p-md-5 ">  
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Registrate ahora</h3>
+
+            <form class="px-md-2">
+
               <div class="form-outline mb-4">
-                <input type="email" [(ngModel)]="form.correo" class="form-control" >
-                <label class="form-label" >Correo electronico</label>
+                <label class="form-label" for="form3Example1q">Nombre</label>
+                <input type="text" id="form3Example1q" class="form-control" />
               </div>
-  
-              <!-- Password input -->
+
               <div class="form-outline mb-4">
-                <input type="password" [(ngModel)]="form.contra" class="form-control" >
-                <label class="form-label" >contraseña</label>
+                <label class="form-label" for="form3Example1q">Correo</label>
+                <input type="email" id="form3Example1q" class="form-control" />
               </div>
               
-              <!-- Password confirm -->
               <div class="form-outline mb-4">
-                <input type="password" [(ngModel)]="ccontra" class="form-control" >
-                <label class="form-label" >confirmar contraseña</label>
-              </div>  
-              <!-- Submit button -->
-              <button (click)="registrar()" class="btn btn-primary btn-block mb-4">
-                Registrate
-              </button>
+                <label class="form-label" for="form3Example4cg">Contraseña</label>
+                <input type="password" id="form3Example4cg" class="form-control" />
+              </div>
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example4cg">Confirmar contraseña</label>
+                <input type="password" id="form3Example4cg" class="form-control" />
+              </div>
+
+              <button type="submit" class="btn btn-success btn-lg mb-1">Registrarse</button>
+
             </form>
+
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- Section: Design Block -->
+  </div>
+</section>
