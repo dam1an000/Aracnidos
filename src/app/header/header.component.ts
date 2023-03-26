@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CargarscriptsService } from '../cargarscripts.service';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +9,7 @@ import { CargarscriptsService } from '../cargarscripts.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  constructor(private cargarscripts: CargarscriptsService){
+  constructor(private cargarscripts: CargarscriptsService, private auth: AngularFireAuth, private router: Router){
     cargarscripts.carga([
 
        "assets/vendor/aos/aos.js",
@@ -18,6 +20,21 @@ export class HeaderComponent {
        "assets/vendor/php-email-form/validate.js",
        "assets/js/main.js"
     ])
+  }
+  
+  cerrarsesion(){
+    this.auth.authState.subscribe(user =>{
+      if (user) {
+        this.auth.signOut().then(()=>{
+          localStorage.removeItem('user');
+          alert("¡Sesion cerrada!")
+          window.location.reload()
+        })
+      }
+      else{
+        this.router.navigate(['/inicio'])
+      }
+    })
   }
 }
 

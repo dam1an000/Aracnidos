@@ -28,18 +28,18 @@
   
                 <!-- Email input -->
                 <div class="form-outline mb-4">
-                  <input type="email" id="form3Example3" class="form-control" />
+                  <input type="email" [(ngModel)]="form.correo" name="correo" id="form3Example3" class="form-control" />
                   <label class="form-label" for="form3Example3">Correo electrónico</label>
                 </div>
   
                 <!-- Password input -->
                 <div class="form-outline mb-4">
-                  <input type="password" id="form3Example4" class="form-control" />
+                  <input type="password" [(ngModel)]="form.contra" name="contra"id="form3Example4" class="form-control" />
                   <label class="form-label" for="form3Example4">Contraseña</label>
                 </div>
   
                 <!-- Submit button -->
-                <button type="submit" class="btn btn-primary btn-block mb-4">
+                <button type="submit" (click)="iniciarsesion()" class="btn btn-primary btn-block mb-4">
                   Inciar Sesión 
                 </button>
   
@@ -53,7 +53,7 @@
         </div>
   
         <div class="col-lg-6 mb-5 mb-lg-0">
-          <img src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg" class="w-100 rounded-4 shadow-4"
+          <img src="../../../assets/aracnidos_img/Registro_t.jpg" class="w-100 rounded-4 shadow-4"
             alt="" />
         </div>
       </div>
