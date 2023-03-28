@@ -9,6 +9,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+
+  usuario_activo:boolean
+
   constructor(private cargarscripts: CargarscriptsService, private auth: AngularFireAuth, private router: Router){
     cargarscripts.carga([
 
@@ -20,8 +23,22 @@ export class HeaderComponent {
        "assets/vendor/php-email-form/validate.js",
        "assets/js/main.js"
     ])
+   
   }
   
+  ngOnInit(): void{
+    this.auth.authState.subscribe(user =>{
+      if (user) {
+        this.usuario_activo=true
+        
+      }
+      else{
+        this.usuario_activo=false
+      }
+    })
+
+  }
+
   cerrarsesion(){
     this.auth.authState.subscribe(user =>{
       if (user) {
