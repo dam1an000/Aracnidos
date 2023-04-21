@@ -1,9 +1,78 @@
 .tar_texto{
+    font-size: 17px;
+    text-align: center;  
+}
+
+nav{
     text-align: justify;
-    padding: 17px;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.t_spiderlings{
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+    text-align: justify;
+    padding-right: 200px;
 }
 
 .spiderlings1{
-    text-align: center;
-    padding: 20px;
+    margin-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 150px;
+}
+
+.spiderlings2{
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.spiderlings3{
+    margin-right: 10px;
+    padding-left: 150px;
+    padding-bottom: 20px;
+    height: 200px;
+    width: 430px;
+}
+
+.spiderlings4{
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    height: 200px;
+    width: 205px;
+}
+
+.spiderlings5{
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    height: 200px;
+    width: 205px;
+}
+
+.spiderlings6{
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    height: 200px;
+    width: 430px;
+}
+
+.tv{
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 400px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    height: 500px;
+    width: 650px;
+}
+
+.tv_texto{
+    justify-content: center;
+    padding-left: 288px;
+    font-weight: bolder;
 }
