@@ -1,7 +1,18 @@
 h2{
     padding: 18px;
+    color: wheat;
 }
 .imagen{
     width: 105%;
     height: auto;
+}
+
+section{
+    background: rgb(87,82,99);
+    background: linear-gradient(0deg, rgba(87,82,99,1) 0%, rgba(19,14,20,1) 50%, rgba(87,82,99,1) 99%);
+}
+
+.texto_esc{
+    color:white;
+    font-size: 20px;
 }

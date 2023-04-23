@@ -11,6 +11,17 @@ bx{
 .subtitulo{
     color: rgb(255, 255, 255);
 }
-.P1{
+
+section{
+    background: rgb(87,82,99);
+    background: linear-gradient(0deg, rgba(87,82,99,1) 11%, rgba(19,14,20,1) 90%);
+}
+
+.icon-box{
     color: white;
+    size: 100px;
+}
+
+.texto_esp{
+    color:white;
 }

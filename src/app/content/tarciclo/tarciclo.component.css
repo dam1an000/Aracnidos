@@ -1,37 +1,62 @@
 .tar_texto{
     font-size: 17px;
-    text-align: center;  
+    text-align: center;
+    color: wheat;  
+}
+
+.color{
+    color: white;
 }
 
 nav{
     text-align: justify;
     padding: 30px;
     font-size: 20px;
+    background: rgb(87,82,99);
+    background: linear-gradient(0deg, rgba(87,82,99,1) 0%, rgba(19,14,20,1) 50%, rgba(87,82,99,1) 99%);
 }
 
 .t_spiderlings{
     display: flex;
-    justify-content: center;
     margin-top: 6px;
     text-align: justify;
+    margin-right: 90px;
+    color: wheat;
+}
+
+.t_spiderlings_2{
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
     padding-right: 200px;
+    color: wheat;
 }
 
 .spiderlings1{
-    margin-right: 10px;
-    padding-bottom: 20px;
-    padding-left: 150px;
+    width: 100%;
+    height: auto;
+   
 }
 
 .spiderlings2{
-    margin-right: 10px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.row{
+    padding: 20px;
+    text-align: center;
+}
+
+.imagen{
+    width: 100%;
+    height: auto;
 }
 
 .spiderlings3{
     margin-right: 10px;
-    padding-left: 150px;
+    padding-left: 100px;
     padding-bottom: 20px;
     height: 200px;
     width: 430px;
@@ -39,7 +64,7 @@ nav{
 
 .spiderlings4{
     margin-right: 10px;
-    padding-left: 20px;
+    margin-left: 20px;
     padding-bottom: 20px;
     height: 200px;
     width: 205px;
@@ -47,32 +72,62 @@ nav{
 
 .spiderlings5{
     margin-right: 10px;
-    padding-left: 20px;
+    margin-left: 20px;
     padding-bottom: 20px;
     height: 200px;
     width: 205px;
 }
 
-.spiderlings6{
+.spiderlings7{
     margin-right: 10px;
-    padding-left: 10px;
+    margin-left: 100px;
     padding-bottom: 20px;
     height: 200px;
-    width: 430px;
+    width: 330px;
+}
+
+.spiderlings6{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 6px;
+    margin-right: 10px;
+    height: 200px;
+    width: 330px;
+}
+
+.spiderlings8{
+    margin-top: 15px;
+    display: block;
+    margin: auto;
+    margin-right: 10px;
+    height: 300px;
+    width: 330px;
+}
+
+.div_tv{
+    height: 300px;
+    position: static;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    padding: 30px;
 }
 
 .tv{
-    justify-content: center;
-    margin-right: 10px;
-    margin-left: 400px;
-    padding-left: 20px;
-    padding-bottom: 10px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     height: 500px;
     width: 650px;
 }
 
 .tv_texto{
     justify-content: center;
-    padding-left: 288px;
+    display: flex;
+    margin: auto;
     font-weight: bolder;
+    background: rgb(161, 134, 192);
 }
