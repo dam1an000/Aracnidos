@@ -20,18 +20,18 @@
           <li><a class="nav-link scrollto active comp" [routerLink]="['inicio']">Inicio</a></li>
           <li class="dropdown"><a class="nav-link comp" [routerLink]="['tarantulas']"><span>Tarántulas</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a class="nav-link scrollto comp" [routerLink]="['Tarciclo']">Ciclo biologico</a></li>
-              <li><a class="nav-link scrollto comp" [routerLink]="['Tarconservacion']">Conservacion</a> </li>
+              <li><a class="nav-link scrollto comp" [routerLink]="['Tarciclo']">Ciclo biológico</a></li>
+              <li><a class="nav-link scrollto comp" [routerLink]="['Tarconservacion']">Conservación</a> </li>
               <li><a class="nav-link scrollto comp" [routerLink]="['Tarmuda']">Ecdisis o muda</a></li>
-              <li><a class="nav-link scrollto comp" [routerLink]="['Taranatomia']">Anatomia</a></li>
+              <li><a class="nav-link scrollto comp" [routerLink]="['Taranatomia']">Anatomía</a></li>
             </ul>
           </li>
           <li class="dropdown"><a  class="nav-link comp" [routerLink]="['Escorpiones']"><span>Escorpiones</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a class="nav-link scrollto comp" [routerLink]="['Escciclo']">Ciclo biologico</a></li>
-              <li><a class="nav-link scrollto comp" [routerLink]="['Escconservacion']">Conservacion</a> </li>
+              <li><a class="nav-link scrollto comp" [routerLink]="['Escciclo']">Ciclo biológico</a></li>
+              <li><a class="nav-link scrollto comp" [routerLink]="['Escconservacion']">Conservación</a> </li>
               <li><a class="nav-link scrollto comp" [routerLink]="['Escmuda']">Ecdisis o muda</a></li>
-              <li><a class="nav-link scrollto comp" [routerLink]="['Escanatomia']">Anatomia</a></li>
+              <li><a class="nav-link scrollto comp" [routerLink]="['Escanatomia']">Anatomía</a></li>
             </ul>
           </li>
           <li class="dropdown"><a  class="nav-link comp" [routerLink]="['Cuidados']"><span>Cuidados</span> <i class="bi bi-chevron-down"></i></a>
@@ -40,8 +40,7 @@
               <li><a class="nav-link scrollto comp" [routerLink]="['enfermedades']">Enfermedades y accidentes</a> </li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto comp" [routerLink]="['Galeria']">Galeria</a></li>
-          <li><a class="nav-link scrollto comp" [routerLink]="['Contacto']">Contacto</a></li>
+          <li><a class="nav-link scrollto comp" [routerLink]="['Galeria']">Galería</a></li>
           <li><a class="nav-link scrollto comp" [routerLink]="['sesion']" *ngIf="usuario_activo==false">Iniciar Sesión <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
           <li><a class="nav-link scrollto comp" [routerLink]="['']"  *ngIf="usuario_activo==true" (click)="cerrarsesion()" >Cerrar Sesión <i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
         </ul>

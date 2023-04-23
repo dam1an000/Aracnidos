@@ -548,7 +548,7 @@ section {
 .about h3 {
   font-weight: 400;
   font-size: 34px;
-  color: BLACK;
+  color: white;
 }
 
 .about .icon-box {
@@ -558,19 +558,19 @@ section {
 .about .icon-box i {
   font-size: 48px;
   float: left;
-  color: #1bac91;
+  color: wheat;
 }
 
 .about .icon-box h4 {
   font-size: 22px;
   font-weight: 500;
   margin-left: 60px;
-  color: #21413c;
+  color: wheat;
 }
 
 .about .icon-box p {
   font-size: 15px;
-  color: #848484;
+  color: WHITE;
   margin-left: 60px;
 }
 
@@ -953,7 +953,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #4ae3c6;
+  color: #ffffff;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -1398,7 +1398,7 @@ section {
 
 #footer .footer-top {
   background: linear-gradient(0deg, rgb(34, 34, 34) 0%, rgb(0,0,0,1) 100%);
-  border-bottom: 1px solid #18302c;
+  border-bottom: 1px solid rgb(87,82,99);
   padding: 60px 0 30px 0;
 }
 
@@ -1425,7 +1425,7 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #1c3733;
+  background: rgb(87,82,99);
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1438,7 +1438,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #1bac91;
+  background: #000000;
   color: #fff;
   text-decoration: none;
 }
@@ -1463,7 +1463,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #4ae3c6;
+  color: rgb(87,82,99);
   font-size: 18px;
   line-height: 1;
 }
@@ -1486,7 +1486,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #34dfbf;
+  color: rgb(87,82,99);
 }
 
 #footer .footer-top .footer-newsletter form {

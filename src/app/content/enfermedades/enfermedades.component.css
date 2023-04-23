@@ -1,0 +1,37 @@
+section{
+    text-align: justify;
+    padding-top: 100px;
+    font-size: 20px;
+    background: rgb(87,82,99);
+    background: linear-gradient(0deg, rgba(87,82,99,1) 0%, rgba(19,14,20,1) 50%, rgba(87,82,99,1) 99%);
+}
+.section-title{
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+}
+h2{
+    color: wheat;
+    text-align: center;
+}
+h1{
+    color: wheat;
+}
+
+.imagen{
+    width: 100%;
+    height: auto;
+}
+.imagen2{
+    width: 100%;
+    height: auto;
+}
+
+.row{
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+.letra{
+    color: wheat;
+}

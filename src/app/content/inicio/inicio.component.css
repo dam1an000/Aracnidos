@@ -13,6 +13,7 @@ bx{
 }
 
 section{
+    padding-top: 10px;
     background: rgb(87,82,99);
     background: linear-gradient(0deg, rgba(87,82,99,1) 11%, rgba(19,14,20,1) 90%);
 }
@@ -24,4 +25,13 @@ section{
 
 .texto_esp{
     color:white;
+}
+.letra{
+    color: white;
+}
+.carousel-slide{
+    padding-top: 100px;
+}
+.carousel-inner{
+    padding-top: 100px;
 }
