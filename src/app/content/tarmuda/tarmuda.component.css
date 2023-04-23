@@ -1,0 +1,120 @@
+h4{
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+    color: wheat;
+}
+
+.imagen_muda{
+    display: block;
+    margin: auto;
+    padding: auto;
+    width: 35%;
+    height: auto;
+}
+
+section{
+    background: rgb(87,82,99);
+    background: linear-gradient(0deg, rgba(87,82,99,1) 0%, rgba(19,14,20,1) 50%, rgba(87,82,99,1) 99%);
+}
+
+ .muda_texto{
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    padding: 30px;
+ }
+
+ .muda_texto_2{
+        color: wheat;
+        text-align: center;
+        padding: 30px;
+}
+
+ .row{
+    padding: 20px;
+    text-align: center;
+}
+
+.muda_1{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.muda_2{
+    width: 344px;
+    height: 344px;
+}
+
+.muda_3{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.muda_4{
+    width: 100%;
+    height: auto;
+}
+
+.muda_5{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.muda_6{
+    width: 100%;
+    height: auto;
+}
+
+.muda_7{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.muda_8{
+    width: 100%;
+    height: auto;
+}
+
+.muda_9{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.muda_10{
+    width: 100%;
+    height: auto;
+}
+
+.muda_11{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.muda_12{
+    width: 80%;
+    height: auto;
+}
+
+.muda_13{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.muda_14{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.muda_15{
+    width: 100%;
+    height: auto;
+}
