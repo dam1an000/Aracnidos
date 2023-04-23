@@ -2,3 +2,9 @@ section{
     background: rgb(87,82,99);
 background: linear-gradient(0deg, rgba(87,82,99,1) 0%, rgba(19,14,20,1) 50%, rgba(87,82,99,1) 99%);
 }
+button:hover{
+    cursor:url(../../../assets/cursor/arañacursor.png), auto;
+}
+button{
+    cursor:url(../../../assets/cursor/cursornormal.png), auto;
+}

@@ -120,6 +120,7 @@ h6 {
 */
 .navbar {
   padding: 0;
+  color: white;
 }
 
 .navbar ul {
@@ -136,6 +137,7 @@ h6 {
 
 .navbar>ul>li+li {
   margin-left: 30px;
+  
 }
 
 .navbar a,
@@ -156,6 +158,7 @@ h6 {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
+  
 }
 
 .navbar>ul>li>a:before {
@@ -165,7 +168,7 @@ h6 {
   height: 2px;
   bottom: 3px;
   left: 0;
-  background-color: #1bac91;
+  background-color: #666075;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -176,6 +179,7 @@ h6 {
 .navbar .active:before {
   visibility: visible;
   width: 100%;
+  
 }
 
 .navbar a:hover,
@@ -183,6 +187,7 @@ h6 {
 .navbar .active:focus,
 .navbar li:hover>a {
   color: #fff;
+  
 }
 
 .navbar .dropdown ul {
@@ -195,9 +200,11 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: white;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
+  background-image: url(../../assets/img/araña.gif);
+  background-size:cover;
 }
 
 .navbar .dropdown ul li {
@@ -209,7 +216,8 @@ h6 {
   font-size: 14px;
   text-transform: none;
   font-weight: 500;
-  color: #062822;
+  color: black;
+  
 }
 
 .navbar .dropdown ul a i {
@@ -219,7 +227,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #1bac91;
+
 }
 
 .navbar .dropdown:hover>ul {
@@ -854,6 +862,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: wheat;
+  cursor: url(../../assets/cursor/arañacursor.png), auto;
 }
 
 .portfolio #portfolio-flters li:last-child {

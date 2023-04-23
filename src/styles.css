@@ -3,3 +3,12 @@
     font-family: 'nordic_metal_band';
     src: url(assets/font/Nordic_Metal_Band.otf) 
 } 
+body{
+    cursor: url(assets/cursor/cursornormal.png), auto;
+}
+a{
+    cursor: url(assets/cursor/arañacursor.png),auto;
+}
+label{
+    cursor: url(assets/cursor/cursornormal.png), auto;
+}

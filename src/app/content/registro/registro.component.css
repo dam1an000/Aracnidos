@@ -5,3 +5,9 @@ padding: 60px;
 background-image: url(../../../assets/aracnidos_img/Registro_t.jpg);
 background-size: 100% 100%;
 }
+button:hover{
+    cursor:url(../../../assets/cursor/arañacursor.png), auto;
+}
+button{
+    cursor:url(../../../assets/cursor/cursornormal.png), auto;
+}

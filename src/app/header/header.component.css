@@ -11,11 +11,16 @@
     width: 75px;
     height: 75px;
     padding: 5px;
+    cursor: url(../../assets/cursor/arañacursor.png),auto;
 }
 
 header{
     background: rgb(25,25,25);
     background: linear-gradient(0deg, rgb(34, 34, 34) 0%, rgb(0,0,0,1) 100%);
+    cursor: url(../../assets/cursor/cursornormal.png), auto;
+}
+a{
+    cursor: url(../../assets/cursor/arañacursor.png),auto;
 }
 
 .comp{
@@ -24,5 +29,5 @@ header{
 }
 
 :hover.comp{
-    color: rgb(61, 197, 179); 
+    color: rgba(191, 141, 188, 0.859); 
 }

@@ -34,4 +34,11 @@ section{
 }
 .carousel-inner{
     padding-top: 100px;
+
+}
+button:hover{
+    cursor:url(../../../assets/cursor/arañacursor.png), auto;
+}
+button{
+    cursor:url(../../../assets/cursor/arañacursor.png), auto;
 }
