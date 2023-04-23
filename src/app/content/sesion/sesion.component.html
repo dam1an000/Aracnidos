@@ -19,33 +19,33 @@
       <div class="row g-0 align-items-center">
         <div class="col-lg-6 mb-5 mb-lg-0">
           <div class="card cascading-right" style="
-              background: hsla(0, 0%, 100%, 0.55);
+              background: hsla(0, 5%, 70%, 0.55);
               backdrop-filter: blur(30px);
               ">
             <div class="card-body p-5 shadow-5 text-center">
-              <h2 class="fw-bold mb-5">Inciar Sesión</h2>
+              <h2 class="fw-bold mb-5"style="color:white;">Inciar Sesión</h2>
               <form>
   
                 <!-- Email input -->
                 <div class="form-outline mb-4">
                   <input type="email" [(ngModel)]="form.correo" name="correo" id="form3Example3" class="form-control" />
-                  <label class="form-label" for="form3Example3">Correo electrónico</label>
+                  <label class="form-label" style="color:white; font-weight: bold;" for="form3Example3">Correo electrónico</label>
                 </div>
   
                 <!-- Password input -->
                 <div class="form-outline mb-4">
                   <input type="password" [(ngModel)]="form.contra" name="contra"id="form3Example4" class="form-control" />
-                  <label class="form-label" for="form3Example4">Contraseña</label>
+                  <label class="form-label" style="color:white; font-weight: bold;" for="form3Example4">Contraseña</label>
                 </div>
   
                 <!-- Submit button -->
-                <button type="submit" (click)="iniciarsesion()" class="btn btn-primary btn-block mb-4">
+                <button style="color:white; background-color: black;" type="submit" (click)="iniciarsesion()" class="btn btn-block mb-4">
                   Inciar Sesión 
                 </button>
   
                 <!-- Register buttons -->
                 <div class="text-center">
-                  <p>Si no tienes una cuenta <a [routerLink]="['../registro']">¡Registrate!</a></p>
+                  <p style="color:white;" >Si no tienes una cuenta <a style="color:black;" [routerLink]="['../registro']">¡Registrate!</a></p>
                 </div>
               </form>
             </div>

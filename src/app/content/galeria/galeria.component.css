@@ -1,8 +1,16 @@
 h2{
     padding: 15px;
+    color: wheat;
+}
+.letra{
+    color: white;
+    font-size: 20px;
 }
 .img-fluid{
     width: 500px;
     height: 300px;
 }
-
+section{
+    background: rgb(87,82,99);
+background: linear-gradient(0deg, rgba(87,82,99,1) 0%, rgba(19,14,20,1) 50%, rgba(87,82,99,1) 99%);
+}
