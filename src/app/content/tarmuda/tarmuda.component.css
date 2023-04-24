@@ -76,7 +76,7 @@ section{
 }
 
 .muda_8{
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
@@ -115,6 +115,40 @@ section{
 }
 
 .muda_15{
+    width: 100%;
+    height: auto;
+}
+
+
+.muda_16{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.muda_17{
+    width: 80%;
+    height: auto;
+}
+
+.muda_18{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.muda_19{
+    width: 80%;
+    height: auto;
+}
+
+.muda_20{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.muda_21{
     width: 100%;
     height: auto;
 }

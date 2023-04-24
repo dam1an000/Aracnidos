@@ -1,0 +1,84 @@
+h4{
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+    color: wheat;
+}
+
+section{
+    background: rgb(87,82,99);
+    background: linear-gradient(0deg, rgba(87,82,99,1) 0%, rgba(19,14,20,1) 50%, rgba(87,82,99,1) 99%);
+}
+
+.imagen_anatomia{
+    display: block;
+    margin: auto;
+    padding: auto;
+    width: 35%;
+    height: auto;
+}
+
+.texto_anatomia{
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    padding: 30px;
+ }
+
+ .imagen_anatomia_2{
+    display: block;
+    margin: auto;
+    padding: auto;
+    width: 70%;
+    height: auto;
+}
+
+.anat_texto_2{
+    color: wheat;
+    text-align: center;
+    padding: 30px;
+}
+
+.anat_3{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.anat_4{
+    width: 90%;
+    height: auto;
+}
+
+.anat_5{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.anat_6{
+    width: 100%;
+    height: auto;
+}
+
+.anat_7{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.anat_8{
+    width: 100%;
+    height: auto;
+}
+
+.anat_9{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.anat_10{
+    width: 100%;
+    height: auto;
+}
