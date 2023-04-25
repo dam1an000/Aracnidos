@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFireAuth} from '@angular/fire/compat/auth'
+import { AngularFireAuth} from '@angular/fire/compat/auth';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-registro',
@@ -28,22 +29,36 @@ export class RegistroComponent implements OnInit {
     if (this.form.nombre != "" && this.form.correo != "" && this.form.contra != "" && this.ccontra != "") 
     {
       if (this.form.contra != this.ccontra) {
-        alert("Las contraseñas no coinciden")
+        Swal.fire({
+          icon: 'error',
+          title: 'Las contraseñas no coinciden',
+        })
       }
       else{
         this.adduser(this.form).then((result)=>{
           if (result) {
-            alert("¡Registrado correctamente!")
+            Swal.fire({
+              icon: 'success',
+              title: '¡Registrado correctamente!',
+              showConfirmButton: false,
+              timer: 1500
+            })
             this.ngOnInit()
           }
           else{
-            alert("Error. intente nuevamente.")
+            Swal.fire({
+              icon: 'error',
+              title: 'Error. Intente nuevamente.',
+            })
           }
         })
       }
     }
     else{
-      alert("Favor de completar los datos")
+      Swal.fire({
+        icon: 'error',
+        title: 'Favor de completar los datos',
+      })
     }
   }
   
@@ -55,13 +70,22 @@ export class RegistroComponent implements OnInit {
       })
       .catch(function(error){
         if (error.code == "auth/invalid-email") {
-          alert("Ingresa un correo electronico valido.") 
+          Swal.fire({
+            icon: 'warning',
+            title: 'Ingresa un correo electrónico válido.',
+          })
         }
         if (error.code == 'auth/email-already-in-use') {
-          alert("Ese correo ya se encuentra registrado.")
+          Swal.fire({
+            icon: 'warning',
+            title: 'Ese correo ya se encuentra registrado.',
+          })
         }
         if (error.code == 'auth/weak-password') {
-          alert("La contraseña debe tener almenos 6 caracteres.")
+          Swal.fire({
+            icon: 'warning',
+            title: 'La contraseña debe tener al menos 6 caracteres.',
+          })
         }
       })
     })
