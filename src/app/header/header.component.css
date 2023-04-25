@@ -6,7 +6,6 @@
     -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent;  
     }
-
 .logoimg{
     width: 75px;
     height: 75px;
@@ -23,11 +22,20 @@ a{
     cursor: url(../../assets/cursor/arañacursor.png),auto;
 }
 
-.comp{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:medium;
-}
+
 
 :hover.comp{
-    color: rgba(191, 141, 188, 0.859); 
+    color: wheat; 
+}
+.offcanvas{
+    background: rgba(66, 60, 66, 0.859);
+    width: 250px;
+}
+.btn-close{
+    color: #fff;
+    font-weight: bold;
+    background-color:#fff;
+}
+.mobilelink:hover{
+color: wheat;
 }

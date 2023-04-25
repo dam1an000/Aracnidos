@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CargarscriptsService } from '../cargarscripts.service';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -7,7 +9,10 @@ import { CargarscriptsService } from '../cargarscripts.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  constructor(private cargarscripts: CargarscriptsService){
+  
+  usuario_activo:boolean
+
+  constructor(private cargarscripts: CargarscriptsService, private auth: AngularFireAuth, private router: Router){
     cargarscripts.carga([
 
        "assets/vendor/aos/aos.js",
@@ -18,5 +23,33 @@ export class NavbarComponent {
        "assets/vendor/php-email-form/validate.js",
        "assets/js/main.js"
     ])
+   
+  }
+  ngOnInit(): void{
+    this.auth.authState.subscribe(user =>{
+      if (user) {
+        this.usuario_activo=true
+        
+      }
+      else{
+        this.usuario_activo=false
+      }
+    })
+
+  }
+
+  cerrarsesion(){
+    this.auth.authState.subscribe(user =>{
+      if (user) {
+        this.auth.signOut().then(()=>{
+          localStorage.removeItem('user');
+          alert("¡Sesion cerrada!")
+          window.location.reload()
+        })
+      }
+      else{
+        this.router.navigate(['/inicio'])
+      }
+    })
   }
 }

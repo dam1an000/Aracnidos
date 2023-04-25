@@ -1,6 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-sesion',
@@ -27,7 +28,13 @@ export class SesionComponent implements OnInit{
     this.auth.signInWithEmailAndPassword(this.form.correo,this.form.contra).then((userCredential)=>{
       const user= userCredential.user;
       console.log(user)
-      alert("¡Bienvenid@!")
+      Swal.fire({
+        position: 'top',
+        icon: 'success',
+        title: '¡Bienvenido!',
+        showConfirmButton: false,
+        timer: 1500
+      })
     })
     .catch((error) =>{
       const errorCode = error.code;

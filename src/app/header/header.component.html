@@ -1,6 +1,4 @@
 
-
-  <!-- ======= Header ======= -->
   <header  class="fixed-top d-flex align-items-center">
     <div class="container d-flex justify-content-between">
 
@@ -17,6 +15,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
+          
           <li><a class="nav-link scrollto active comp" [routerLink]="['inicio']">Inicio</a></li>
           <li class="dropdown"><a class="nav-link comp" [routerLink]="['tarantulas']"><span>Tarántulas</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -44,8 +43,28 @@
           <li><a class="nav-link scrollto comp" [routerLink]="['sesion']" *ngIf="usuario_activo==false">Iniciar Sesión <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
           <li><a class="nav-link scrollto comp" [routerLink]="['']"  *ngIf="usuario_activo==true" (click)="cerrarsesion()" >Cerrar Sesión <i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <i class="bi bi-list mobile-nav-toggle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></i>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title titulo" id="offcanvasScrollingLabel">Heavy Aracnidos</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <li class="mobilelink" [routerLink]="['inicio']" >Inicio<a class="nav-link scrollto active comp" [routerLink]="['inicio']"></a></li>
+    <li class="mobilelink" [routerLink]="['tarantulas']"> Tarántulas <a class="nav-link comp" [routerLink]="['tarantulas']"> </a></li>
+    <li class="mobilelink" [routerLink]="['Escorpiones']">Escorpiones <a  class="nav-link comp" [routerLink]="['Escorpiones']"></a> </li>
+    <li class="mobilelink" [routerLink]="['Cuidados']"> Cuidados<a  class="nav-link comp" [routerLink]="['Cuidados']"></a> </li>
+    <li class="mobilelink" [routerLink]="['mantenimiento']"> Mantenimiento<a  class="nav-link comp" [routerLink]="['mantenimiento']"></a> </li>
+    <li class="mobilelink" [routerLink]="['enfermedades']"> Enfermedades y accidentes<a  class="nav-link comp" [routerLink]="['enfermedades']"></a> </li>
+    <li class="mobilelink" [routerLink]="['Galeria']"> Galería<a  class="nav-link comp" [routerLink]="['Galeria']"></a> </li>
+    <li class="mobilelink" [routerLink]="['sesion']" *ngIf="usuario_activo==false"> Iniciar Sesión <i class="fa-solid fa-arrow-right-to-bracket"></i><a class="nav-link scrollto comp" [routerLink]="['sesion']" *ngIf="usuario_activo==false"></a></li>
+    <li class="mobilelink" [routerLink]="['']" *ngIf="usuario_activo==true" (click)="cerrarsesion()">Cerrar Sesión <i class="fa-solid fa-arrow-right-from-bracket"></i><a class="nav-link scrollto comp" [routerLink]="['']"  *ngIf="usuario_activo==true" (click)="cerrarsesion()" ></a></li>
+  </div>
+</div>
       </nav><!-- .navbar -->
 
     </div>
+
+    </header>
   

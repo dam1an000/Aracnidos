@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CargarscriptsService } from '../cargarscripts.service';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-header',
@@ -44,9 +45,10 @@ export class HeaderComponent {
       if (user) {
         this.auth.signOut().then(()=>{
           localStorage.removeItem('user');
-          alert("¡Sesion cerrada!")
-          window.location.reload()
+          Swal.fire('¡Sesión cerrada!')
+          
         })
+        window.location.reload()
       }
       else{
         this.router.navigate(['/inicio'])
