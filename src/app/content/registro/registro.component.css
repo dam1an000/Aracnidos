@@ -7,7 +7,20 @@ background-size: 100% 100%;
 }
 button:hover{
     cursor:url(../../../assets/cursor/arañacursor.png), auto;
+    background-color:black
 }
 button{
     cursor:url(../../../assets/cursor/cursornormal.png), auto;
+    background-color: black;
+    color: white;
 }
+
+.fondo_cuadro{
+    background: hsla(0, 5%, 70%, 0.55);
+    backdrop-filter: blur(30px);
+    color: white;
+    font-weight: bold;
+}
+
+
+
