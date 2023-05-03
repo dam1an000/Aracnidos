@@ -3,8 +3,9 @@
     -webkit-text-stroke: 1px white;
     font-family: 'nordic_metal_band'; 
     background: -webkit-linear-gradient(top, rgb(14, 14, 14), rgb(83, 83, 83));
-    -webkit-background-clip: text;  
-    -webkit-text-fill-color: transparent;  
+    background-clip: text;  
+    -webkit-text-fill-color: transparent; 
+    padding-top: 8px; 
     }
 .logoimg{
     width: 75px;
